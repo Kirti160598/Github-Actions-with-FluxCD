@@ -1,0 +1,33 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: github-flux-demo
+  labels:
+    app: github-flux-demo
+spec:
+  replicas: 1
+  selector:
+    matchLabels:
+      app: github-flux-demo
+  template:
+    metadata:
+      labels:
+        app: github-flux-demo
+    spec:
+      containers:
+        - name: app
+          image: kirtigupta1234/github-flux-demo:latest
+          ports: 
+           - containerPort: 5000
+---
+apiVersion: v1
+kind: Service
+metadata:
+  name: github-flux-demo-service
+spec:
+  selector:
+    app: github-flux-demo
+  ports:
+    - protocol: TCP
+      port: 80
+      targetPort: 5000
