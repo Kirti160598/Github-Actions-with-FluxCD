@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>FluxCD Demo</title>
+    <style>
+        body {
+            background: linear-gradient(135deg, #4f9de8, #86c9f7, #ffffff);
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            text-align: center;
+            padding: 80px;
+            color: #2c3e50;
+        }
+        .container {
+            background-color: #ffffffcc;
+            padding: 40px;
+            border-radius: 12px;
+            box-shadow: 0 0 20px rgba(0,0,0,0.2);
+            display: inline-block;
+        }
+        h1 {
+            font-size: 36px;
+            margin-bottom: 20px;
+            color: #2980b9;
+        }
+        p {
+            font-size: 20px;
+            margin-top: 10px;
+            color: #34495e;
+        }
+        .footer {
+            margin-top: 40px;
+            font-size: 14px;
+            color: #7f8c8d;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>🚀 GitHub Actions + FluxCD Demo</h1>
+        <p>Deployed successfully to your Kubernetes cluster</p>
+        <p><strong>Current Timestamp:</strong> {{ time }}</p>
+    </div>
+    <div class="footer">Made with ❤️ for DevOps demo</div>
+</body>
+</html>
