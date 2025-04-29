@@ -24,11 +24,7 @@ apiVersion: v1
 kind: Service
 metadata:
   name: github-flux-demo-service
-<<<<<<< HEAD
-  namespace: flux-github
-=======
   namespace: flux-system
->>>>>>> 3668bd41130f938b0938bdae544805c8e5e5332a
 spec:
   selector:
     app: github-flux-demo
