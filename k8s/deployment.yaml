@@ -2,6 +2,7 @@ apiVersion: apps/v1
 kind: Deployment
 metadata:
   name: github-flux-demo
+  namespace: flux-system
   labels:
     app: github-flux-demo
 spec:
