@@ -1,5 +1,5 @@
 From python:3.9
 WORKDIR /app
-COPY main.py
+COPY main.py .
 RUN pip install flask
 CMD["python","main.py"]
