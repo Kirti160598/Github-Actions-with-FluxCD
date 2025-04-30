@@ -17,7 +17,7 @@ spec:
     spec:
       containers:
         - name: app
-          image: kirtigupta1234/github-flux-demo:latest-1745927130
+          image: kirtigupta1234/github-flux-demo:latest-1746006267
           ports: 
            - containerPort: 5000
 ---
